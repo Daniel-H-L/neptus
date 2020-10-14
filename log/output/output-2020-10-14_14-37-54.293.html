@@ -1,0 +1,449 @@
+<html><head><title>Neptus Output</title></head><body><font color='green'><i>Neptus started at 2020-10-14 14:37:54</i></font><hr>
+
+<font color='black'><pre>[2020-10-14 14:37:54.054+0200] - INFO  - Starting Neptus  2020.05.2-SNAPSHOT (2020-10-14, gneptus-2020.01.1-228-g6002511e8-dirty) ... (ConfigFetch.java:296) {main} {Neptus.Pub}
+[2020-10-14 14:37:54.054+0200] - INFO  - Using Java from: Oracle Corporation | Version: 1.8.0_212 (ConfigFetch.java:297) {main} {Neptus.Pub}
+[2020-10-14 14:37:54.054+0200] - INFO  - On OS: Linux | Version: 5.4.0-47-generic | Arch.: amd64 (ConfigFetch.java:298) {main} {Neptus.Pub}
+[2020-10-14 14:37:54.054+0200] - INFO  - SCM Extended Info:
+version=2020.05.2-SNAPSHOT
+scm.revision=neptus-2020.01.1-228-g6002511e8-dirty
+scm.revision.uid=6002511e8ab045535e12a39c66743c997ee2ab54
+scm.repository.path=heads/develop-0-g6002511e8-dirty
+scm.last.changed.author=Paulo Dias
+scm.last.changed.date=2020-09-30 17:54:19 +0100
+scm.last.changed.date.short=2020-09-30
+scm.wc.dirty.string=dirty
+scm.wc.dirty.status=${git.wc.dirty.status}
+scm.wc.status= M .classpath
+ M missions/APDL/apdl-noptilus.nmisz
+ M missions/APDL/missao-apdl.nmisz
+ (ConfigFetch.java:304) {main} {Neptus.Pub}
+[2020-10-14 14:37:54.054+0200] - INFO  - Config. file found in: neptus-config.xml (ConfigFetch.java:216) {main} {Neptus.Pub}
+[2020-10-14 14:37:54.054+0200] - INFO  - I18n (trying): en (I18n.java:87) {main} {Neptus.Pub}
+[2020-10-14 14:37:54.054+0200] - INFO  - I18n (using):  en_US (I18n.java:115) {main} {Neptus.Pub}
+[2020-10-14 14:37:54.054+0200] - INFO  - Reflections took 69 ms to scan 1 urls, producing 94 keys and 553 values  (Reflections.java:224) {main} {org.reflections.Reflections}
+[2020-10-14 14:37:54.054+0200] - INFO  - Reflections took 31 ms to scan 1 urls, producing 66 keys and 315 values  (Reflections.java:224) {main} {org.reflections.Reflections}
+[2020-10-14 14:37:54.054+0200] - INFO  - Reflections took 4 ms to scan 1 urls, producing 12 keys and 13 values  (Reflections.java:224) {main} {org.reflections.Reflections}
+[2020-10-14 14:37:54.054+0200] - INFO  - Reflections took 2 ms to scan 1 urls, producing 4 keys and 4 values  (Reflections.java:224) {main} {org.reflections.Reflections}
+</pre></font><font color='red'><pre>java.lang.ClassNotFoundException: org.acme.myplugin.MyConsoleViz
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at pt.lsts.neptus.plugins.ExtensionsBag.addPlugin(ExtensionsBag.java:68)
+	at pt.lsts.neptus.plugins.PluginsRepository.addPlugin(PluginsRepository.java:71)
+	at pt.lsts.neptus.plugins.PluginsLoader.loadPluginFromLST(PluginsLoader.java:202)
+	at pt.lsts.neptus.plugins.PluginsLoader.load(PluginsLoader.java:89)
+	at pt.lsts.neptus.loader.NeptusMain.loadPreRequirementsDataExceptConfigFetch(NeptusMain.java:249)
+	at pt.lsts.neptus.loader.NeptusMain.launch(NeptusMain.java:138)
+	at pt.lsts.neptus.loader.NeptusMain.main(NeptusMain.java:356)
+java.lang.ClassNotFoundException: org.acme.myplugin.MyConsoleViz
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at pt.lsts.neptus.plugins.PluginsRepository.addPlugin(PluginsRepository.java:75)
+	at pt.lsts.neptus.plugins.PluginsLoader.loadPluginFromLST(PluginsLoader.java:202)
+	at pt.lsts.neptus.plugins.PluginsLoader.load(PluginsLoader.java:89)
+	at pt.lsts.neptus.loader.NeptusMain.loadPreRequirementsDataExceptConfigFetch(NeptusMain.java:249)
+	at pt.lsts.neptus.loader.NeptusMain.launch(NeptusMain.java:138)
+	at pt.lsts.neptus.loader.NeptusMain.main(NeptusMain.java:356)
+</pre></font><font color='black'><pre>[2020-10-14 14:37:56.056+0200] - WARN  - Custom editor "Klein3500" not found: java.lang.ClassNotFoundException: pt.lsts.neptus.params.editor.custom.Klein3500CustomEditor (ConfigurationManager.java:237) {System parameters files loader} {Neptus.Pub}
+[2020-10-14 14:37:56.056+0200] - INFO  - workspace load finished in 2.222s  (NeptusMain.java:179) {main} {Neptus.Pub}
+Loading: net.java.games.input.LinuxEnvironmentPlugin
+Failed to open device (/dev/input/event16): Failed to open device /dev/input/event16 (13)
+
+Failed to open device (/dev/input/event15): Failed to open device /dev/input/event15 (13)
+
+Failed to open device (/dev/input/event14): Failed to open device /dev/input/event14 (13)
+
+Failed to open device (/dev/input/event13): Failed to open device /dev/input/event13 (13)
+
+Failed to open device (/dev/input/event12): Failed to open device /dev/input/event12 (13)
+
+Failed to open device (/dev/input/event11): Failed to open device /dev/input/event11 (13)
+
+Failed to open device (/dev/input/event10): Failed to open device /dev/input/event10 (13)
+
+Failed to open device (/dev/input/event9): Failed to open device /dev/input/event9 (13)
+
+Failed to open device (/dev/input/event8): Failed to open device /dev/input/event8 (13)
+
+Failed to open device (/dev/input/event7): Failed to open device /dev/input/event7 (13)
+
+Failed to open device (/dev/input/event6): Failed to open device /dev/input/event6 (13)
+
+Failed to open device (/dev/input/event5): Failed to open device /dev/input/event5 (13)
+
+Failed to open device (/dev/input/event4): Failed to open device /dev/input/event4 (13)
+
+Failed to open device (/dev/input/event3): Failed to open device /dev/input/event3 (13)
+
+Failed to open device (/dev/input/event2): Failed to open device /dev/input/event2 (13)
+
+Failed to open device (/dev/input/event1): Failed to open device /dev/input/event1 (13)
+
+Failed to open device (/dev/input/event0): Failed to open device /dev/input/event0 (13)
+
+Linux plugin claims to have found 0 controllers
+[2020-10-14 14:37:58.058+0200] - INFO  - Starting IMC comms (ImcMsgManager.java:295) {SwingWorker-pool-1-thread-1} {Neptus.Pub}
+[2020-10-14 14:37:58.058+0200] - INFO  - Sender Thread Started (TCPTransport.java:752) {SwingWorker-pool-1-thread-1} {Neptus.Pub}
+[2020-10-14 14:37:58.058+0200] - INFO  - Starting comm. ImcMsgManager (CommonCommBaseImplementation.java:131) {SwingWorker-pool-1-thread-1} {Neptus.Pub}
+[2020-10-14 14:37:58.058+0200] - INFO  - currentProfile: Normal (MigLayoutContainer.java:190) {SwingWorker-pool-1-thread-1} {Neptus.Pub}
+[2020-10-14 14:37:58.058+0200] - WARN  - Value is null!! (MainSystemSelectionCombo.java:214) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 14:38:07.007+0200] - INFO  - class pt.lsts.neptus.console.ConsoleLayout :: New main system added to console: 'lauv-xplore-1' (ConsoleLayout.java:1018) {ImcMsgManager [1472371446] :: MessageProcessor} {Neptus.Pub}
+[2020-10-14 14:38:07.007+0200] - INFO  - class pt.lsts.neptus.gui.system.selection.MainSystemSelectionCombo :: New system added to console: 'lauv-xplore-1' (MainSystemSelectionCombo.java:122) {Console Event Bus ::7} {Neptus.Pub}
+[2020-10-14 14:38:17.017+0200] - INFO  - Cleaned Console Layout: MigLayout in MainPanel (MainPanel.java:156) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 14:38:17.017+0200] - INFO  - Mission set to null (ConsoleLayout.java:900) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 14:38:17.017+0200] - WARN  - Value is null!! (MainSystemSelectionCombo.java:214) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 14:38:17.017+0200] - WARN  - Value is null!! (MainSystemSelectionCombo.java:214) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 14:38:17.017+0200] - INFO  - class pt.lsts.neptus.console.ConsoleLayout :: New main system added to console: 'lauv-xplore-1' (ConsoleLayout.java:1018) {SwingWorker-pool-1-thread-2} {Neptus.Pub}
+[2020-10-14 14:38:17.017+0200] - INFO  - class pt.lsts.neptus.gui.system.selection.MainSystemSelectionCombo :: New system added to console: 'lauv-xplore-1' (MainSystemSelectionCombo.java:122) {Console Event Bus ::2} {Neptus.Pub}
+[2020-10-14 14:38:19.019+0200] - INFO  - Initialized Map Providers in 0.653s (WorldRenderPainter.java:330) {SwingWorker-pool-1-thread-2} {Neptus.Pub}
+[2020-10-14 14:38:19.019+0200] - INFO  - Reflections took 1 ms to scan 1 urls, producing 8 keys and 15 values  (Reflections.java:224) {SwingWorker-pool-1-thread-2} {org.reflections.Reflections}
+file:/home/daniel/workspace/neptus/bin/neptus.jar
+[2020-10-14 14:38:19.019+0200] - INFO  - Loaded 57 colormaps from file:/home/daniel/workspace/neptus/bin/neptus.jar (ColorMapFactory.java:497) {SwingWorker-pool-1-thread-2} {Neptus.Pub}
+[2020-10-14 14:38:19.019+0200] - INFO  - Read 0 vessel names from /home/daniel/workspace/neptus/conf/ais.cache (AisContactDb.java:127) {SwingWorker-pool-1-thread-2} {Neptus.Pub}
+[2020-10-14 14:38:19.019+0200] - INFO  - currentProfile: Normal (MigLayoutContainer.java:190) {SwingWorker-pool-1-thread-2} {Neptus.Pub}
+[2020-10-14 14:38:19.019+0200] - INFO  - Code in (ConsolePanel.java:645) tried to add an already registered updates client (PeriodicUpdatesService.java:113) {SwingWorker-pool-1-thread-2} {Neptus.Pub}
+[2020-10-14 14:38:20.020+0200] - WARN  - Property not in config: LBL - Activation Time from system with ID 30 (SystemConfigurationEditorPanel.java:537) {Queue Dispacher 6bad476cfor SystemConfiguration} {Neptus.Pub}
+[2020-10-14 14:38:20.020+0200] - WARN  - Property not in config: LBL - Active - Scope from system with ID 30 (SystemConfigurationEditorPanel.java:537) {Queue Dispacher 6bad476cfor SystemConfiguration} {Neptus.Pub}
+[2020-10-14 14:38:20.020+0200] - WARN  - Property not in config: LBL - Active - Visibility from system with ID 30 (SystemConfigurationEditorPanel.java:537) {Queue Dispacher 6bad476cfor SystemConfiguration} {Neptus.Pub}
+[2020-10-14 14:38:20.020+0200] - WARN  - Property not in config: LBL - Bad Range Probability from system with ID 30 (SystemConfigurationEditorPanel.java:537) {Queue Dispacher 6bad476cfor SystemConfiguration} {Neptus.Pub}
+[2020-10-14 14:38:20.020+0200] - WARN  - Property not in config: LBL - Deactivation Time from system with ID 30 (SystemConfigurationEditorPanel.java:537) {Queue Dispacher 6bad476cfor SystemConfiguration} {Neptus.Pub}
+[2020-10-14 14:38:20.020+0200] - WARN  - Property not in config: LBL - Debug Level from system with ID 30 (SystemConfigurationEditorPanel.java:537) {Queue Dispacher 6bad476cfor SystemConfiguration} {Neptus.Pub}
+[2020-10-14 14:38:20.020+0200] - WARN  - Property not in config: LBL - Entity Label from system with ID 30 (SystemConfigurationEditorPanel.java:537) {Queue Dispacher 6bad476cfor SystemConfiguration} {Neptus.Pub}
+[2020-10-14 14:38:20.020+0200] - WARN  - Property not in config: LBL - Execution Priority from system with ID 30 (SystemConfigurationEditorPanel.java:537) {Queue Dispacher 6bad476cfor SystemConfiguration} {Neptus.Pub}
+[2020-10-14 14:38:20.020+0200] - WARN  - Property not in config: LBL - PRNG Seed from system with ID 30 (SystemConfigurationEditorPanel.java:537) {Queue Dispacher 6bad476cfor SystemConfiguration} {Neptus.Pub}
+[2020-10-14 14:38:20.020+0200] - WARN  - Property not in config: LBL - PRNG Type from system with ID 30 (SystemConfigurationEditorPanel.java:537) {Queue Dispacher 6bad476cfor SystemConfiguration} {Neptus.Pub}
+[2020-10-14 14:38:20.020+0200] - WARN  - Property not in config: LBL - Ping Delay from system with ID 30 (SystemConfigurationEditorPanel.java:537) {Queue Dispacher 6bad476cfor SystemConfiguration} {Neptus.Pub}
+[2020-10-14 14:38:20.020+0200] - WARN  - Property not in config: LBL - Standard Deviation from system with ID 30 (SystemConfigurationEditorPanel.java:537) {Queue Dispacher 6bad476cfor SystemConfiguration} {Neptus.Pub}
+[2020-10-14 14:38:20.020+0200] - WARN  - Property not in config: LBL - Wait for Ping Request from system with ID 30 (SystemConfigurationEditorPanel.java:537) {Queue Dispacher 6bad476cfor SystemConfiguration} {Neptus.Pub}
+[2020-10-14 14:38:20.020+0200] - WARN  - Property not in config: AHRS - Activation Control from system with ID 30 (SystemConfigurationEditorPanel.java:537) {Queue Dispacher 6bad476cfor SystemConfiguration} {Neptus.Pub}
+[2020-10-14 14:38:20.020+0200] - WARN  - Property not in config: AHRS - Activation Time from system with ID 30 (SystemConfigurationEditorPanel.java:537) {Queue Dispacher 6bad476cfor SystemConfiguration} {Neptus.Pub}
+[2020-10-14 14:38:20.020+0200] - WARN  - Property not in config: AHRS - Active from system with ID 30 (SystemConfigurationEditorPanel.java:537) {Queue Dispacher 6bad476cfor SystemConfiguration} {Neptus.Pub}
+[2020-10-14 14:38:20.020+0200] - WARN  - Property not in config: AHRS - Active - Scope from system with ID 30 (SystemConfigurationEditorPanel.java:537) {Queue Dispacher 6bad476cfor SystemConfiguration} {Neptus.Pub}
+[2020-10-14 14:38:20.020+0200] - WARN  - Property not in config: AHRS - Active - Visibility from system with ID 30 (SystemConfigurationEditorPanel.java:537) {Queue Dispacher 6bad476cfor SystemConfiguration} {Neptus.Pub}
+[2020-10-14 14:38:20.020+0200] - WARN  - Property not in config: AHRS - Deactivation Time from system with ID 30 (SystemConfigurationEditorPanel.java:537) {Queue Dispacher 6bad476cfor SystemConfiguration} {Neptus.Pub}
+[2020-10-14 14:38:20.020+0200] - WARN  - Property not in config: AHRS - Debug Level from system with ID 30 (SystemConfigurationEditorPanel.java:537) {Queue Dispacher 6bad476cfor SystemConfiguration} {Neptus.Pub}
+[2020-10-14 14:38:20.020+0200] - WARN  - Property not in config: AHRS - Entity Label from system with ID 30 (SystemConfigurationEditorPanel.java:537) {Queue Dispacher 6bad476cfor SystemConfiguration} {Neptus.Pub}
+[2020-10-14 14:38:20.020+0200] - WARN  - Property not in config: AHRS - Execution Priority from system with ID 30 (SystemConfigurationEditorPanel.java:537) {Queue Dispacher 6bad476cfor SystemConfiguration} {Neptus.Pub}
+[2020-10-14 14:38:20.020+0200] - WARN  - Property not in config: AHRS - Gyro Rate Bias from system with ID 30 (SystemConfigurationEditorPanel.java:537) {Queue Dispacher 6bad476cfor SystemConfiguration} {Neptus.Pub}
+[2020-10-14 14:38:20.020+0200] - WARN  - Property not in config: AHRS - Measures Euler Angles from system with ID 30 (SystemConfigurationEditorPanel.java:537) {Queue Dispacher 6bad476cfor SystemConfiguration} {Neptus.Pub}
+[2020-10-14 14:38:20.020+0200] - WARN  - Property not in config: AHRS - Output Deltas from system with ID 30 (SystemConfigurationEditorPanel.java:537) {Queue Dispacher 6bad476cfor SystemConfiguration} {Neptus.Pub}
+[2020-10-14 14:38:20.020+0200] - WARN  - Property not in config: AHRS - PRNG Seed from system with ID 30 (SystemConfigurationEditorPanel.java:537) {Queue Dispacher 6bad476cfor SystemConfiguration} {Neptus.Pub}
+[2020-10-14 14:38:20.020+0200] - WARN  - Property not in config: AHRS - PRNG Type from system with ID 30 (SystemConfigurationEditorPanel.java:537) {Queue Dispacher 6bad476cfor SystemConfiguration} {Neptus.Pub}
+[2020-10-14 14:38:20.020+0200] - WARN  - Property not in config: AHRS - Standard Deviation - Angular Velocity from system with ID 30 (SystemConfigurationEditorPanel.java:537) {Queue Dispacher 6bad476cfor SystemConfiguration} {Neptus.Pub}
+[2020-10-14 14:38:20.020+0200] - WARN  - Property not in config: AHRS - Standard Deviation - Euler Angles from system with ID 30 (SystemConfigurationEditorPanel.java:537) {Queue Dispacher 6bad476cfor SystemConfiguration} {Neptus.Pub}
+[2020-10-14 14:38:20.020+0200] - WARN  - Property not in config: AHRS - Standard Deviation - Heading Offset from system with ID 30 (SystemConfigurationEditorPanel.java:537) {Queue Dispacher 6bad476cfor SystemConfiguration} {Neptus.Pub}
+[2020-10-14 14:38:20.020+0200] - WARN  - Property not in config: Navigation - Abort if Uncertainty Exceeded from system with ID 30 (SystemConfigurationEditorPanel.java:537) {Queue Dispacher 6bad476cfor SystemConfiguration} {Neptus.Pub}
+[2020-10-14 14:38:20.020+0200] - WARN  - Property not in config: Navigation - Activate speed to rpm estimation limit from system with ID 30 (SystemConfigurationEditorPanel.java:537) {Queue Dispacher 6bad476cfor SystemConfiguration} {Neptus.Pub}
+[2020-10-14 14:38:20.020+0200] - WARN  - Property not in config: Navigation - Activation Time from system with ID 30 (SystemConfigurationEditorPanel.java:537) {Queue Dispacher 6bad476cfor SystemConfiguration} {Neptus.Pub}
+[2020-10-14 14:38:20.020+0200] - WARN  - Property not in config: Navigation - Altitude Attitude Compensation from system with ID 30 (SystemConfigurationEditorPanel.java:537) {Queue Dispacher 6bad476cfor SystemConfiguration} {Neptus.Pub}
+[2020-10-14 14:38:20.020+0200] - WARN  - Property not in config: Navigation - Altitude EMA gain from system with ID 30 (SystemConfigurationEditorPanel.java:537) {Queue Dispacher 6bad476cfor SystemConfiguration} {Neptus.Pub}
+[2020-10-14 14:38:20.020+0200] - WARN  - Property not in config: Navigation - Altitude timeout from system with ID 30 (SystemConfigurationEditorPanel.java:537) {Queue Dispacher 6bad476cfor SystemConfiguration} {Neptus.Pub}
+[2020-10-14 14:38:20.020+0200] - WARN  - Property not in config: Navigation - DVL absolute thresholds from system with ID 30 (SystemConfigurationEditorPanel.java:537) {Queue Dispacher 6bad476cfor SystemConfiguration} {Neptus.Pub}
+[2020-10-14 14:38:20.020+0200] - WARN  - Property not in config: Navigation - DVL relative threshold time window from system with ID 30 (SystemConfigurationEditorPanel.java:537) {Queue Dispacher 6bad476cfor SystemConfiguration} {Neptus.Pub}
+[2020-10-14 14:38:20.020+0200] - WARN  - Property not in config: Navigation - DVL relative thresholds from system with ID 30 (SystemConfigurationEditorPanel.java:537) {Queue Dispacher 6bad476cfor SystemConfiguration} {Neptus.Pub}
+[2020-10-14 14:38:20.020+0200] - WARN  - Property not in config: Navigation - DVL sanity timeout from system with ID 30 (SystemConfigurationEditorPanel.java:537) {Queue Dispacher 6bad476cfor SystemConfiguration} {Neptus.Pub}
+[2020-10-14 14:38:20.020+0200] - WARN  - Property not in config: Navigation - DVL timeout from system with ID 30 (SystemConfigurationEditorPanel.java:537) {Queue Dispacher 6bad476cfor SystemConfiguration} {Neptus.Pub}
+[2020-10-14 14:38:20.020+0200] - WARN  - Property not in config: Navigation - Deactivation Time from system with ID 30 (SystemConfigurationEditorPanel.java:537) {Queue Dispacher 6bad476cfor SystemConfiguration} {Neptus.Pub}
+[2020-10-14 14:38:20.020+0200] - WARN  - Property not in config: Navigation - Debug Level from system with ID 30 (SystemConfigurationEditorPanel.java:537) {Queue Dispacher 6bad476cfor SystemConfiguration} {Neptus.Pub}
+[2020-10-14 14:38:20.020+0200] - WARN  - Property not in config: Navigation - Depth Sensor from system with ID 30 (SystemConfigurationEditorPanel.java:537) {Queue Dispacher 6bad476cfor SystemConfiguration} {Neptus.Pub}
+[2020-10-14 14:38:20.020+0200] - WARN  - Property not in config: Navigation - Depth sensor localization in x axis from system with ID 30 (SystemConfigurationEditorPanel.java:537) {Queue Dispacher 6bad476cfor SystemConfiguration} {Neptus.Pub}
+[2020-10-14 14:38:20.020+0200] - WARN  - Property not in config: Navigation - Depth timeout from system with ID 30 (SystemConfigurationEditorPanel.java:537) {Queue Dispacher 6bad476cfor SystemConfiguration} {Neptus.Pub}
+[2020-10-14 14:38:20.020+0200] - WARN  - Property not in config: Navigation - Disable GPS for debug from system with ID 30 (SystemConfigurationEditorPanel.java:537) {Queue Dispacher 6bad476cfor SystemConfiguration} {Neptus.Pub}
+[2020-10-14 14:38:20.020+0200] - WARN  - Property not in config: Navigation - Distance Between DVL and CG from system with ID 30 (SystemConfigurationEditorPanel.java:537) {Queue Dispacher 6bad476cfor SystemConfiguration} {Neptus.Pub}
+[2020-10-14 14:38:20.020+0200] - WARN  - Property not in config: Navigation - Distance Between GPS and CG from system with ID 30 (SystemConfigurationEditorPanel.java:537) {Queue Dispacher 6bad476cfor SystemConfiguration} {Neptus.Pub}
+[2020-10-14 14:38:20.020+0200] - WARN  - Property not in config: Navigation - Distance Between LBL and GPS from system with ID 30 (SystemConfigurationEditorPanel.java:537) {Queue Dispacher 6bad476cfor SystemConfiguration} {Neptus.Pub}
+[2020-10-14 14:38:20.020+0200] - WARN  - Property not in config: Navigation - Entity Label from system with ID 30 (SystemConfigurationEditorPanel.java:537) {Queue Dispacher 6bad476cfor SystemConfiguration} {Neptus.Pub}
+[2020-10-14 14:38:20.020+0200] - WARN  - Property not in config: Navigation - Entity Label - Altitude - Hardware from system with ID 30 (SystemConfigurationEditorPanel.java:537) {Queue Dispacher 6bad476cfor SystemConfiguration} {Neptus.Pub}
+[2020-10-14 14:38:20.020+0200] - WARN  - Property not in config: Navigation - Entity Label - Altitude - Simulation from system with ID 30 (SystemConfigurationEditorPanel.java:537) {Queue Dispacher 6bad476cfor SystemConfiguration} {Neptus.Pub}
+[2020-10-14 14:38:20.020+0200] - WARN  - Property not in config: Navigation - Entity Label - Compass from system with ID 30 (SystemConfigurationEditorPanel.java:537) {Queue Dispacher 6bad476cfor SystemConfiguration} {Neptus.Pub}
+[2020-10-14 14:38:20.020+0200] - WARN  - Property not in config: Navigation - Entity Label - DVL from system with ID 30 (SystemConfigurationEditorPanel.java:537) {Queue Dispacher 6bad476cfor SystemConfiguration} {Neptus.Pub}
+[2020-10-14 14:38:20.020+0200] - WARN  - Property not in config: Navigation - Entity Label - Depth from system with ID 30 (SystemConfigurationEditorPanel.java:537) {Queue Dispacher 6bad476cfor SystemConfiguration} {Neptus.Pub}
+[2020-10-14 14:38:20.020+0200] - WARN  - Property not in config: Navigation - Entity Label - IMU from system with ID 30 (SystemConfigurationEditorPanel.java:537) {Queue Dispacher 6bad476cfor SystemConfiguration} {Neptus.Pub}
+[2020-10-14 14:38:20.020+0200] - WARN  - Property not in config: Navigation - Euler timeout from system with ID 30 (SystemConfigurationEditorPanel.java:537) {Queue Dispacher 6bad476cfor SystemConfiguration} {Neptus.Pub}
+[2020-10-14 14:38:20.020+0200] - WARN  - Property not in config: Navigation - Execution Frequency from system with ID 30 (SystemConfigurationEditorPanel.java:537) {Queue Dispacher 6bad476cfor SystemConfiguration} {Neptus.Pub}
+[2020-10-14 14:38:20.020+0200] - WARN  - Property not in config: Navigation - Execution Priority from system with ID 30 (SystemConfigurationEditorPanel.java:537) {Queue Dispacher 6bad476cfor SystemConfiguration} {Neptus.Pub}
+[2020-10-14 14:38:20.020+0200] - WARN  - Property not in config: Navigation - GPS Maximum Dynamic HACC factor from system with ID 30 (SystemConfigurationEditorPanel.java:537) {Queue Dispacher 6bad476cfor SystemConfiguration} {Neptus.Pub}
+[2020-10-14 14:38:20.020+0200] - WARN  - Property not in config: Navigation - GPS Maximum HACC from system with ID 30 (SystemConfigurationEditorPanel.java:537) {Queue Dispacher 6bad476cfor SystemConfiguration} {Neptus.Pub}
+[2020-10-14 14:38:20.020+0200] - WARN  - Property not in config: Navigation - GPS Maximum HDOP from system with ID 30 (SystemConfigurationEditorPanel.java:537) {Queue Dispacher 6bad476cfor SystemConfiguration} {Neptus.Pub}
+[2020-10-14 14:38:20.020+0200] - WARN  - Property not in config: Navigation - GPS Moving Average Samples from system with ID 30 (SystemConfigurationEditorPanel.java:537) {Queue Dispacher 6bad476cfor SystemConfiguration} {Neptus.Pub}
+[2020-10-14 14:38:20.020+0200] - WARN  - Property not in config: Navigation - GPS Noise Covariance from system with ID 30 (SystemConfigurationEditorPanel.java:537) {Queue Dispacher 6bad476cfor SystemConfiguration} {Neptus.Pub}
+[2020-10-14 14:38:20.020+0200] - WARN  - Property not in config: Navigation - GPS timeout from system with ID 30 (SystemConfigurationEditorPanel.java:537) {Queue Dispacher 6bad476cfor SystemConfiguration} {Neptus.Pub}
+[2020-10-14 14:38:20.020+0200] - WARN  - Property not in config: Navigation - Heading Bias Alignment Index from system with ID 30 (SystemConfigurationEditorPanel.java:537) {Queue Dispacher 6bad476cfor SystemConfiguration} {Neptus.Pub}
+[2020-10-14 14:38:20.020+0200] - WARN  - Property not in config: Navigation - Heading alignment sensor diff from system with ID 30 (SystemConfigurationEditorPanel.java:537) {Queue Dispacher 6bad476cfor SystemConfiguration} {Neptus.Pub}
+[2020-10-14 14:38:20.020+0200] - WARN  - Property not in config: Navigation - Heading buffer value from system with ID 30 (SystemConfigurationEditorPanel.java:537) {Queue Dispacher 6bad476cfor SystemConfiguration} {Neptus.Pub}
+[2020-10-14 14:38:20.020+0200] - WARN  - Property not in config: Navigation - Heave Moving Average Samples from system with ID 30 (SystemConfigurationEditorPanel.java:537) {Queue Dispacher 6bad476cfor SystemConfiguration} {Neptus.Pub}
+[2020-10-14 14:38:20.020+0200] - WARN  - Property not in config: Navigation - LBL Expected Range Rejection Constants from system with ID 30 (SystemConfigurationEditorPanel.java:537) {Queue Dispacher 6bad476cfor SystemConfiguration} {Neptus.Pub}
+[2020-10-14 14:38:20.020+0200] - WARN  - Property not in config: Navigation - LBL Noise Covariance with IMU from system with ID 30 (SystemConfigurationEditorPanel.java:537) {Queue Dispacher 6bad476cfor SystemConfiguration} {Neptus.Pub}
+[2020-10-14 14:38:20.020+0200] - WARN  - Property not in config: Navigation - LBL Threshold from system with ID 30 (SystemConfigurationEditorPanel.java:537) {Queue Dispacher 6bad476cfor SystemConfiguration} {Neptus.Pub}
+[2020-10-14 14:38:20.020+0200] - WARN  - Property not in config: Navigation - Main Depth timeout from system with ID 30 (SystemConfigurationEditorPanel.java:537) {Queue Dispacher 6bad476cfor SystemConfiguration} {Neptus.Pub}
+[2020-10-14 14:38:20.020+0200] - WARN  - Property not in config: Navigation - Maximum Distance to Reference from system with ID 30 (SystemConfigurationEditorPanel.java:537) {Queue Dispacher 6bad476cfor SystemConfiguration} {Neptus.Pub}
+[2020-10-14 14:38:20.020+0200] - WARN  - Property not in config: Navigation - Measure Noise Covariance from system with ID 30 (SystemConfigurationEditorPanel.java:537) {Queue Dispacher 6bad476cfor SystemConfiguration} {Neptus.Pub}
+[2020-10-14 14:38:20.020+0200] - WARN  - Property not in config: Navigation - Position Noise Covariance with IMU from system with ID 30 (SystemConfigurationEditorPanel.java:537) {Queue Dispacher 6bad476cfor SystemConfiguration} {Neptus.Pub}
+[2020-10-14 14:38:20.020+0200] - WARN  - Property not in config: Navigation - Process Noise Covariance from system with ID 30 (SystemConfigurationEditorPanel.java:537) {Queue Dispacher 6bad476cfor SystemConfiguration} {Neptus.Pub}
+[2020-10-14 14:38:20.020+0200] - WARN  - Property not in config: Navigation - Reject all LBL ranges from system with ID 30 (SystemConfigurationEditorPanel.java:537) {Queue Dispacher 6bad476cfor SystemConfiguration} {Neptus.Pub}
+[2020-10-14 14:38:20.020+0200] - WARN  - Property not in config: Navigation - Revolutions to speed factor from system with ID 30 (SystemConfigurationEditorPanel.java:537) {Queue Dispacher 6bad476cfor SystemConfiguration} {Neptus.Pub}
+[2020-10-14 14:38:20.020+0200] - WARN  - Property not in config: Navigation - Revolutions to speed variation from system with ID 30 (SystemConfigurationEditorPanel.java:537) {Queue Dispacher 6bad476cfor SystemConfiguration} {Neptus.Pub}
+[2020-10-14 14:38:20.020+0200] - WARN  - Property not in config: Navigation - Rpm to speed estimation from system with ID 30 (SystemConfigurationEditorPanel.java:537) {Queue Dispacher 6bad476cfor SystemConfiguration} {Neptus.Pub}
+[2020-10-14 14:38:20.020+0200] - WARN  - Property not in config: Navigation - Speed Moving Average Samples from system with ID 30 (SystemConfigurationEditorPanel.java:537) {Queue Dispacher 6bad476cfor SystemConfiguration} {Neptus.Pub}
+[2020-10-14 14:38:20.020+0200] - WARN  - Property not in config: Navigation - State Covariance Initial State from system with ID 30 (SystemConfigurationEditorPanel.java:537) {Queue Dispacher 6bad476cfor SystemConfiguration} {Neptus.Pub}
+[2020-10-14 14:38:20.020+0200] - WARN  - Property not in config: Navigation - USBL Noise Covariance from system with ID 30 (SystemConfigurationEditorPanel.java:537) {Queue Dispacher 6bad476cfor SystemConfiguration} {Neptus.Pub}
+[2020-10-14 14:38:20.020+0200] - WARN  - Property not in config: Navigation - speed to rpm estimation percentage limit from system with ID 30 (SystemConfigurationEditorPanel.java:537) {Queue Dispacher 6bad476cfor SystemConfiguration} {Neptus.Pub}
+Set Timezone to: UTC
+[2020-10-14 14:38:20.020+0200] - WARN  - Property not in config: Emergency Monitor - Activation Time from system with ID 30 (SystemConfigurationEditorPanel.java:537) {Queue Dispacher 6bad476cfor SystemConfiguration} {Neptus.Pub}
+[2020-10-14 14:38:20.020+0200] - WARN  - Property not in config: Emergency Monitor - Active - Scope from system with ID 30 (SystemConfigurationEditorPanel.java:537) {Queue Dispacher 6bad476cfor SystemConfiguration} {Neptus.Pub}
+[2020-10-14 14:38:20.020+0200] - WARN  - Property not in config: Emergency Monitor - Active - Visibility from system with ID 30 (SystemConfigurationEditorPanel.java:537) {Queue Dispacher 6bad476cfor SystemConfiguration} {Neptus.Pub}
+[2020-10-14 14:38:20.020+0200] - WARN  - Property not in config: Emergency Monitor - Deactivation Time from system with ID 30 (SystemConfigurationEditorPanel.java:537) {Queue Dispacher 6bad476cfor SystemConfiguration} {Neptus.Pub}
+[2020-10-14 14:38:20.020+0200] - WARN  - Property not in config: Emergency Monitor - Debug Level from system with ID 30 (SystemConfigurationEditorPanel.java:537) {Queue Dispacher 6bad476cfor SystemConfiguration} {Neptus.Pub}
+[2020-10-14 14:38:20.020+0200] - WARN  - Property not in config: Emergency Monitor - Entity Label from system with ID 30 (SystemConfigurationEditorPanel.java:537) {Queue Dispacher 6bad476cfor SystemConfiguration} {Neptus.Pub}
+[2020-10-14 14:38:20.020+0200] - WARN  - Property not in config: Emergency Monitor - Execution Frequency from system with ID 30 (SystemConfigurationEditorPanel.java:537) {Queue Dispacher 6bad476cfor SystemConfiguration} {Neptus.Pub}
+[2020-10-14 14:38:20.020+0200] - WARN  - Property not in config: Emergency Monitor - Execution Priority from system with ID 30 (SystemConfigurationEditorPanel.java:537) {Queue Dispacher 6bad476cfor SystemConfiguration} {Neptus.Pub}
+[2020-10-14 14:38:20.020+0200] - WARN  - Property not in config: Emergency Monitor - Expiration Time - Abort SMS from system with ID 30 (SystemConfigurationEditorPanel.java:537) {Queue Dispacher 6bad476cfor SystemConfiguration} {Neptus.Pub}
+[2020-10-14 14:38:20.020+0200] - WARN  - Property not in config: Emergency Monitor - Expiration Time - Lost Communications from system with ID 30 (SystemConfigurationEditorPanel.java:537) {Queue Dispacher 6bad476cfor SystemConfiguration} {Neptus.Pub}
+[2020-10-14 14:38:20.020+0200] - WARN  - Property not in config: Emergency Monitor - Transmission Interface from system with ID 30 (SystemConfigurationEditorPanel.java:537) {Queue Dispacher 6bad476cfor SystemConfiguration} {Neptus.Pub}
+[2020-10-14 14:38:20.020+0200] - INFO  - Wrote 0 vessel names to /home/daniel/workspace/neptus/conf/ais.cache (AisContactDb.java:156) {Periodic Updates - 1} {Neptus.Pub}
+SoiState JSON :> [{"name":"spot-06","imcid":33798,"lastState":{"latitude":41.17827,"longitude":-8.59567,"heading":0.0,"fuel":0.0,"timestamp":1602509145},"plan":{"id":"idle","waypoints":[],"description":null,"type":null,"survey":null}}]
+date for asset state is Mon Oct 12 15:25:45 CEST 2020
+[2020-10-14 14:38:24.024+0200] - INFO  - spot-06 :: {"name":"spot-06","plan":{"id":"idle","waypoints":[]},"lastState":{"latitude":0,"longitude":0,"time":1602675504}}
+ (AssetsManager.java:337) {Periodic Updates - 2} {Neptus.Pub}
+[2020-10-14 14:39:04.004+0200] - ERROR - Uncaught Exception! (ThreadGroup.java:1057) (ConfigFetch.java:211) {AWT-EventQueue-0} {Neptus.Pub}
+java.lang.NullPointerException
+	at pt.lsts.neptus.console.plugins.PluginManager$6.mouseClicked(PluginManager.java:482)
+	at java.awt.AWTEventMulticaster.mouseClicked(AWTEventMulticaster.java:270)
+	at java.awt.Component.processMouseEvent(Component.java:6542)
+	at javax.swing.JComponent.processMouseEvent(JComponent.java:3324)
+	at java.awt.Component.processEvent(Component.java:6304)
+	at java.awt.Container.processEvent(Container.java:2239)
+	at java.awt.Component.dispatchEventImpl(Component.java:4889)
+	at java.awt.Container.dispatchEventImpl(Container.java:2297)
+	at java.awt.Component.dispatchEvent(Component.java:4711)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4904)
+	at java.awt.LightweightDispatcher.processMouseEvent(Container.java:4544)
+	at java.awt.LightweightDispatcher.dispatchEvent(Container.java:4476)
+	at java.awt.Container.dispatchEventImpl(Container.java:2283)
+	at java.awt.Window.dispatchEventImpl(Window.java:2746)
+	at java.awt.Component.dispatchEvent(Component.java:4711)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:760)
+	at java.awt.EventQueue.access$500(EventQueue.java:97)
+	at java.awt.EventQueue$3.run(EventQueue.java:709)
+	at java.awt.EventQueue$3.run(EventQueue.java:703)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:74)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:84)
+	at java.awt.EventQueue$4.run(EventQueue.java:733)
+	at java.awt.EventQueue$4.run(EventQueue.java:731)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:74)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:730)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:205)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+[2020-10-14 14:39:06.006+0200] - ERROR - Uncaught Exception! (ThreadGroup.java:1057) (ConfigFetch.java:211) {AWT-EventQueue-0} {Neptus.Pub}
+java.lang.NullPointerException
+	at pt.lsts.neptus.console.plugins.PluginManager$6.mouseClicked(PluginManager.java:482)
+	at java.awt.AWTEventMulticaster.mouseClicked(AWTEventMulticaster.java:270)
+	at java.awt.Component.processMouseEvent(Component.java:6542)
+	at javax.swing.JComponent.processMouseEvent(JComponent.java:3324)
+	at java.awt.Component.processEvent(Component.java:6304)
+	at java.awt.Container.processEvent(Container.java:2239)
+	at java.awt.Component.dispatchEventImpl(Component.java:4889)
+	at java.awt.Container.dispatchEventImpl(Container.java:2297)
+	at java.awt.Component.dispatchEvent(Component.java:4711)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4904)
+	at java.awt.LightweightDispatcher.processMouseEvent(Container.java:4544)
+	at java.awt.LightweightDispatcher.dispatchEvent(Container.java:4476)
+	at java.awt.Container.dispatchEventImpl(Container.java:2283)
+	at java.awt.Window.dispatchEventImpl(Window.java:2746)
+	at java.awt.Component.dispatchEvent(Component.java:4711)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:760)
+	at java.awt.EventQueue.access$500(EventQueue.java:97)
+	at java.awt.EventQueue$3.run(EventQueue.java:709)
+	at java.awt.EventQueue$3.run(EventQueue.java:703)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:74)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:84)
+	at java.awt.EventQueue$4.run(EventQueue.java:733)
+	at java.awt.EventQueue$4.run(EventQueue.java:731)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:74)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:730)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:205)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+[2020-10-14 14:39:07.007+0200] - ERROR - Uncaught Exception! (ThreadGroup.java:1057) (ConfigFetch.java:211) {AWT-EventQueue-0} {Neptus.Pub}
+java.lang.NullPointerException
+	at pt.lsts.neptus.console.plugins.PluginManager$6.mouseClicked(PluginManager.java:482)
+	at java.awt.AWTEventMulticaster.mouseClicked(AWTEventMulticaster.java:270)
+	at java.awt.Component.processMouseEvent(Component.java:6542)
+	at javax.swing.JComponent.processMouseEvent(JComponent.java:3324)
+	at java.awt.Component.processEvent(Component.java:6304)
+	at java.awt.Container.processEvent(Container.java:2239)
+	at java.awt.Component.dispatchEventImpl(Component.java:4889)
+	at java.awt.Container.dispatchEventImpl(Container.java:2297)
+	at java.awt.Component.dispatchEvent(Component.java:4711)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4904)
+	at java.awt.LightweightDispatcher.processMouseEvent(Container.java:4544)
+	at java.awt.LightweightDispatcher.dispatchEvent(Container.java:4476)
+	at java.awt.Container.dispatchEventImpl(Container.java:2283)
+	at java.awt.Window.dispatchEventImpl(Window.java:2746)
+	at java.awt.Component.dispatchEvent(Component.java:4711)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:760)
+	at java.awt.EventQueue.access$500(EventQueue.java:97)
+	at java.awt.EventQueue$3.run(EventQueue.java:709)
+	at java.awt.EventQueue$3.run(EventQueue.java:703)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:74)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:84)
+	at java.awt.EventQueue$4.run(EventQueue.java:733)
+	at java.awt.EventQueue$4.run(EventQueue.java:731)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:74)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:730)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:205)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+SoiState JSON :> [{"name":"spot-06","imcid":33798,"lastState":{"latitude":41.17827,"longitude":-8.59567,"heading":0.0,"fuel":0.0,"timestamp":1602509145},"plan":{"id":"idle","waypoints":[],"description":null,"type":null,"survey":null}}]
+date for asset state is Mon Oct 12 15:25:45 CEST 2020
+[2020-10-14 14:39:21.021+0200] - INFO  - spot-06 :: {"name":"spot-06","plan":{"id":"idle","waypoints":[]},"lastState":{"latitude":0,"longitude":0,"time":1602675561}}
+ (AssetsManager.java:337) {Periodic Updates - 2} {Neptus.Pub}
+[2020-10-14 14:39:25.025+0200] - WARN  - Added new console panel: 2D Side View Class name : pt.lsts.neptus.console.plugins.SideState2DPanelConsole (PluginManager.java:275) {SwingWorker-pool-1-thread-3} {Neptus.Pub}
+[2020-10-14 14:39:25.025+0200] - ERROR - PeriodicUpdatesService exception on updated call from 'pt.lsts.neptus.console.plugins.SideState2DPanelConsole[2D Side View,0,0,320x240,invalid,layout=java.awt.BorderLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=java.awt.Dimension[width=100,height=100],preferredSize=]' null (UpdateRequest.java:68) {Periodic Updates - 1} {Neptus.Pub}
+java.lang.NullPointerException
+	at pt.lsts.neptus.console.plugins.SideState2DPanelConsole.update(SideState2DPanelConsole.java:128)
+	at pt.lsts.neptus.plugins.update.UpdateRequest.update(UpdateRequest.java:65)
+	at pt.lsts.neptus.plugins.update.PeriodicUpdatesService.nextUpdate(PeriodicUpdatesService.java:227)
+	at pt.lsts.neptus.plugins.update.PeriodicUpdatesService.access$000(PeriodicUpdatesService.java:44)
+	at pt.lsts.neptus.plugins.update.PeriodicUpdatesService$2.run(PeriodicUpdatesService.java:258)
+[2020-10-14 14:40:20.020+0200] - INFO  - Wrote 0 vessel names to /home/daniel/workspace/neptus/conf/ais.cache (AisContactDb.java:156) {Periodic Updates - 1} {Neptus.Pub}
+SoiState JSON :> [{"name":"spot-06","imcid":33798,"lastState":{"latitude":41.17827,"longitude":-8.59567,"heading":0.0,"fuel":0.0,"timestamp":1602509145},"plan":{"id":"idle","waypoints":[],"description":null,"type":null,"survey":null}}]
+date for asset state is Mon Oct 12 15:25:45 CEST 2020
+[2020-10-14 14:40:21.021+0200] - INFO  - spot-06 :: {"name":"spot-06","plan":{"id":"idle","waypoints":[]},"lastState":{"latitude":0,"longitude":0,"time":1602675621}}
+ (AssetsManager.java:337) {Periodic Updates - 1} {Neptus.Pub}
+SoiState JSON :> [{"name":"spot-06","imcid":33798,"lastState":{"latitude":41.17827,"longitude":-8.59567,"heading":0.0,"fuel":0.0,"timestamp":1602509145},"plan":{"id":"idle","waypoints":[],"description":null,"type":null,"survey":null}}]
+date for asset state is Mon Oct 12 15:25:45 CEST 2020
+[2020-10-14 14:41:21.021+0200] - INFO  - spot-06 :: {"name":"spot-06","plan":{"id":"idle","waypoints":[]},"lastState":{"latitude":0,"longitude":0,"time":1602675681}}
+ (AssetsManager.java:337) {Periodic Updates - 2} {Neptus.Pub}
+[2020-10-14 14:42:20.020+0200] - INFO  - Wrote 0 vessel names to /home/daniel/workspace/neptus/conf/ais.cache (AisContactDb.java:156) {Periodic Updates - 1} {Neptus.Pub}
+SoiState JSON :> [{"name":"spot-06","imcid":33798,"lastState":{"latitude":41.17827,"longitude":-8.59567,"heading":0.0,"fuel":0.0,"timestamp":1602509145},"plan":{"id":"idle","waypoints":[],"description":null,"type":null,"survey":null}}]
+date for asset state is Mon Oct 12 15:25:45 CEST 2020
+[2020-10-14 14:42:21.021+0200] - INFO  - spot-06 :: {"name":"spot-06","plan":{"id":"idle","waypoints":[]},"lastState":{"latitude":0,"longitude":0,"time":1602675741}}
+ (AssetsManager.java:337) {Periodic Updates - 2} {Neptus.Pub}
+[2020-10-14 14:42:38.038+0200] - INFO  - ConsoleLayout cleanup start (ConsoleLayout.java:1697) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 14:42:38.038+0200] - INFO  - Cleaning DesiredPath Layer (ConsoleLayout.java:1651) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 14:42:38.038+0200] - INFO  - Cleaned DesiredPath Layer (ConsoleLayout.java:1653) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 14:42:38.038+0200] - INFO  - Cleaning Find Main System (ConsoleLayout.java:1651) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 14:42:38.038+0200] - INFO  - Cleaned Find Main System (ConsoleLayout.java:1653) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 14:42:38.038+0200] - INFO  - Cleaning Keyboard Shortcuts (ConsoleLayout.java:1651) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 14:42:38.038+0200] - INFO  - Cleaned Keyboard Shortcuts (ConsoleLayout.java:1653) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 14:42:38.038+0200] - INFO  - Cleaning NMEA Plotter (ConsoleLayout.java:1651) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 14:42:38.038+0200] - INFO  - Cleaned NMEA Plotter (ConsoleLayout.java:1653) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 14:42:38.038+0200] - INFO  - Cleaning Plan Simulation (ConsoleLayout.java:1651) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 14:42:38.038+0200] - INFO  - Cleaned Plan Simulation (ConsoleLayout.java:1653) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 14:42:38.038+0200] - INFO  - Cleaning System Information On Map (ConsoleLayout.java:1651) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 14:42:38.038+0200] - INFO  - Cleaned System Information On Map (ConsoleLayout.java:1653) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 14:42:38.038+0200] - INFO  - Cleaning netCDF Data Visualization (ConsoleLayout.java:1651) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 14:42:38.038+0200] - INFO  - Cleaned netCDF Data Visualization (ConsoleLayout.java:1653) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 14:42:38.038+0200] - INFO  - Cleaned Depth Soundings Interaction (ConsoleLayout.java:1665) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 14:42:38.038+0200] - INFO  - Cleaned Systems Interaction (ConsoleLayout.java:1665) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 14:42:38.038+0200] - INFO  - Cleaned Abort Button in Console Layout: MigLayout (ContainerSubPanel.java:318) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 14:42:38.038+0200] - INFO  - Cleaned Abort Request in Console Layout: MigLayout (ContainerSubPanel.java:318) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 14:42:38.038+0200] - INFO  - Closing popup dialog for: Acoustic Operations (ConsolePanel.java:355) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 14:42:38.038+0200] - WARN  - Unregistering Key Accelerator (ConsoleLayout.java:493) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 14:42:38.038+0200] - INFO  - Cleaned Acoustic Operations in Console Layout: MigLayout (ContainerSubPanel.java:318) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 14:42:38.038+0200] - INFO  - Cleaned Audio Vehicle State Alerts in Console Layout: MigLayout (ContainerSubPanel.java:318) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 14:42:38.038+0200] - INFO  - Closing popup dialog for: Chronometer (ConsolePanel.java:355) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 14:42:38.038+0200] - WARN  - Unregistering Key Accelerator (ConsoleLayout.java:493) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 14:42:38.038+0200] - INFO  - Cleaned Chronometer in Console Layout: MigLayout (ContainerSubPanel.java:318) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 14:42:38.038+0200] - INFO  - Cleaned Command Planner in Console Layout: MigLayout (ContainerSubPanel.java:318) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 14:42:38.038+0200] - INFO  - Cleaned Contact Marker in Console Layout: MigLayout (ContainerSubPanel.java:318) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 14:42:38.038+0200] - INFO  - Closing popup dialog for: Controllers Panel (ConsolePanel.java:355) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 14:42:38.038+0200] - WARN  - Unregistering Key Accelerator (ConsoleLayout.java:493) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 14:42:38.038+0200] - INFO  - Cleaned Controllers Panel in Console Layout: MigLayout (ContainerSubPanel.java:318) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 14:42:38.038+0200] - INFO  - Closing popup dialog for: Entities (ConsolePanel.java:355) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 14:42:38.038+0200] - WARN  - Unregistering Key Accelerator (ConsoleLayout.java:493) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 14:42:38.038+0200] - INFO  - Cleaned Entities in Console Layout: MigLayout (ContainerSubPanel.java:318) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 14:42:38.038+0200] - INFO  - Cleaned FollowReference Interaction in Console Layout: MigLayout (ContainerSubPanel.java:318) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 14:42:38.038+0200] - INFO  - Closing popup dialog for: Navigation Alignment (ConsolePanel.java:355) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 14:42:38.038+0200] - WARN  - Unregistering Key Accelerator (ConsoleLayout.java:493) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 14:42:38.038+0200] - INFO  - Cleaned Navigation Alignment in Console Layout: MigLayout (ContainerSubPanel.java:318) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 14:42:38.038+0200] - INFO  - Closing popup dialog for: Incoming Data (ConsolePanel.java:355) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 14:42:38.038+0200] - WARN  - Unregistering Key Accelerator (ConsoleLayout.java:493) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 14:42:38.038+0200] - INFO  - Cleaned Incoming Data in Console Layout: MigLayout (ContainerSubPanel.java:318) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 14:42:38.038+0200] - INFO  - Closing popup dialog for: Kml Import (ConsolePanel.java:355) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 14:42:38.038+0200] - INFO  - Cleaned Kml Import in Console Layout: MigLayout (ContainerSubPanel.java:318) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 14:42:38.038+0200] - INFO  - Closing popup dialog for: LBL Ranges (ConsolePanel.java:355) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 14:42:38.038+0200] - WARN  - Unregistering Key Accelerator (ConsoleLayout.java:493) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 14:42:38.038+0200] - INFO  - Cleaned LBL Ranges in Console Layout: MigLayout (ContainerSubPanel.java:318) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 14:42:38.038+0200] - INFO  - Closing popup dialog for: Logbook History (ConsolePanel.java:355) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 14:42:38.038+0200] - WARN  - Unregistering Key Accelerator (ConsoleLayout.java:493) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 14:42:38.038+0200] - INFO  - Cleaned Logbook History in Console Layout: MigLayout (ContainerSubPanel.java:318) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 14:42:38.038+0200] - INFO  - Closing popup dialog for: Log Download (ConsolePanel.java:355) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 14:42:38.038+0200] - WARN  - Unregistering Key Accelerator (ConsoleLayout.java:493) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 14:42:38.038+0200] - INFO  - Cleaned Log Download in Console Layout: MigLayout (ContainerSubPanel.java:318) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 14:42:38.038+0200] - INFO  - Cleaned Log Preview in Console Layout: MigLayout (ContainerSubPanel.java:318) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 14:42:38.038+0200] - INFO  - Cleaned Map Editor in Console Layout: MigLayout (ContainerSubPanel.java:318) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 14:42:38.038+0200] - ERROR - SystemImcMsgCommInfo: Not possible to remove listener from pt.lsts.neptus.console.plugins.planning.MapPanel[Map Panel,0,0,1060x636,invalid,layout=java.awt.BorderLayout,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.EmptyBorder@3e390eb1,flags=9,maximumSize=,minimumSize=,preferredSize=] (CommonCommBaseImplementation.java:601) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 14:42:38.038+0200] - INFO  - Cleaned Map Panel in Console Layout: MigLayout (ContainerSubPanel.java:318) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 14:42:38.038+0200] - INFO  - Cleaned Mission Tree in Console Layout: MigLayout (ContainerSubPanel.java:318) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 14:42:38.038+0200] - INFO  - Cleaned Multi-Vehicle plan overlay in Console Layout: MigLayout (ContainerSubPanel.java:318) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 14:42:38.038+0200] - INFO  - Cleaned MyLocationDisplay in Console Layout: MigLayout (ContainerSubPanel.java:318) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 14:42:38.038+0200] - INFO  - Cleaned Operation Limits in Console Layout: MigLayout (ContainerSubPanel.java:318) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 14:42:38.038+0200] - INFO  - Cleaned Plan Control in Console Layout: MigLayout (ContainerSubPanel.java:318) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 14:42:38.038+0200] - INFO  - Cleaned Plan Control State in Console Layout: MigLayout (ContainerSubPanel.java:318) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 14:42:38.038+0200] - INFO  - Cleaned Plan Edition in Console Layout: MigLayout (ContainerSubPanel.java:318) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 14:42:38.038+0200] - INFO  - Cleaned PlanExporter in Console Layout: MigLayout (ContainerSubPanel.java:318) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 14:42:38.038+0200] - INFO  - Cleaned Plan Simulation Preview in Console Layout: MigLayout (ContainerSubPanel.java:318) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 14:42:38.038+0200] - INFO  - Cleaned Plan Statistics in Console Layout: MigLayout (ContainerSubPanel.java:318) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 14:42:38.038+0200] - INFO  - Cleaned S57 Tools in Console Layout: MigLayout (ContainerSubPanel.java:318) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 14:42:38.038+0200] - INFO  - Cleaned SimulationActionsPlugin in Console Layout: MigLayout (ContainerSubPanel.java:318) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 14:42:38.038+0200] - INFO  - Closing popup dialog for: System Configuration (ConsolePanel.java:355) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 14:42:38.038+0200] - WARN  - Unregistering Key Accelerator (ConsoleLayout.java:493) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 14:42:38.038+0200] - INFO  - Cleaned System Configuration in Console Layout: MigLayout (ContainerSubPanel.java:318) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 14:42:38.038+0200] - INFO  - Closing popup dialog for: Systems List (ConsolePanel.java:355) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 14:42:38.038+0200] - WARN  - Unregistering Key Accelerator (ConsoleLayout.java:493) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 14:42:38.038+0200] - INFO  - Cleaned Systems List in Console Layout: MigLayout (ContainerSubPanel.java:318) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 14:42:38.038+0200] - INFO  - Closing popup dialog for: Text Commands (ConsolePanel.java:355) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 14:42:38.038+0200] - WARN  - Unregistering Key Accelerator (ConsoleLayout.java:493) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 14:42:38.038+0200] - INFO  - Cleaned Text Commands in Console Layout: MigLayout (ContainerSubPanel.java:318) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 14:42:38.038+0200] - INFO  - Closing popup dialog for: Tide panel (ConsolePanel.java:355) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 14:42:38.038+0200] - WARN  - Unregistering Key Accelerator (ConsoleLayout.java:493) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 14:42:38.038+0200] - INFO  - Cleaned Tide panel in Console Layout: MigLayout (ContainerSubPanel.java:318) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 14:42:38.038+0200] - INFO  - Cleaned Vehicle State Monitor in Console Layout: MigLayout (ContainerSubPanel.java:318) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 14:42:38.038+0200] - INFO  - Cleaned Stream Speed Overlay in Console Layout: MigLayout (ContainerSubPanel.java:318) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 14:42:38.038+0200] - INFO  - Cleaned NMEAPositionSender in Console Layout: MigLayout (ContainerSubPanel.java:318) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 14:42:38.038+0200] - INFO  - Cleaned Iridium Communications Plug-in in Console Layout: MigLayout (ContainerSubPanel.java:318) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 14:42:38.038+0200] - INFO  - Cleaned SOI Interaction in Console Layout: MigLayout (ContainerSubPanel.java:318) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 14:42:38.038+0200] - INFO  - Closing popup dialog for: Iridium Communications Status (ConsolePanel.java:355) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 14:42:38.038+0200] - INFO  - Cleaned Iridium Communications Status in Console Layout: MigLayout (ContainerSubPanel.java:318) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 14:42:38.038+0200] - INFO  - Closing popup dialog for: Sidescan Real-Time Waterfall (ConsolePanel.java:355) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 14:42:38.038+0200] - INFO  - Cleaned Sidescan Real-Time Waterfall in Console Layout: MigLayout (ContainerSubPanel.java:318) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 14:42:38.038+0200] - INFO  - Cleaned Sweep Plan Generator in Console Layout: MigLayout (ContainerSubPanel.java:318) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 14:42:38.038+0200] - INFO  - Closing popup dialog for: Real-Time Plot (ConsolePanel.java:355) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 14:42:38.038+0200] - WARN  - Unregistering Key Accelerator (ConsoleLayout.java:493) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 14:42:38.038+0200] - INFO  - Cleaned Real-Time Plot in Console Layout: MigLayout (ContainerSubPanel.java:318) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 14:42:38.038+0200] - INFO  - Cleaned Ripples Updater in Console Layout: MigLayout (ContainerSubPanel.java:318) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 14:42:38.038+0200] - INFO  - Closing popup dialog for: 2D Side View (ConsolePanel.java:355) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 14:42:38.038+0200] - INFO  - Cleaned 2D Side View in Console Layout: MigLayout (ContainerSubPanel.java:318) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 14:42:38.038+0200] - INFO  - Cleaned Console Layout: MigLayout in MainPanel (MainPanel.java:156) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 14:42:38.038+0200] - INFO  - ConsoleLayout cleanup end in 0.089s (ConsoleLayout.java:1719) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 14:42:38.038+0200] - WARN  - Task pt.lsts.neptus.plugins.sidescan.console.SidescanRealTimeWaterfall$$Lambda$70/1466980282@4e97618d rejected from java.util.concurrent.ThreadPoolExecutor@6eb9889f[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 923] (SidescanRealTimeWaterfall.java:299) {Periodic Updates - 1} {Neptus.Pub}
+[2020-10-14 14:42:38.038+0200] - INFO  - <###> SystemsList : update of SystemsList called after cleanup call!!!!! (SystemsList.java:885) {Periodic Updates - 1} {Neptus.Pub}
+</pre></font>
+<hr>
+<font color='green'><i>Neptus closed at 2020-10-14 14:42:39</i></font>
+</body></html>

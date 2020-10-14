@@ -1,0 +1,247 @@
+<html><head><title>Neptus Output</title></head><body><font color='green'><i>Neptus started at 2020-10-14 13:41:40</i></font><hr>
+
+<font color='black'><pre>[2020-10-14 13:41:40.040+0200] - INFO  - Starting Neptus  2020.05.2-SNAPSHOT (2020-10-14, gneptus-2020.01.1-228-g6002511e8-dirty) ... (ConfigFetch.java:296) {main} {Neptus.Pub}
+[2020-10-14 13:41:40.040+0200] - INFO  - Using Java from: Ubuntu | Version: 11.0.8 (ConfigFetch.java:297) {main} {Neptus.Pub}
+[2020-10-14 13:41:40.040+0200] - INFO  - On OS: Linux | Version: 5.4.0-47-generic | Arch.: amd64 (ConfigFetch.java:298) {main} {Neptus.Pub}
+[2020-10-14 13:41:40.040+0200] - INFO  - SCM Extended Info:
+version=2020.05.2-SNAPSHOT
+scm.revision=neptus-2020.01.1-228-g6002511e8-dirty
+scm.revision.uid=6002511e8ab045535e12a39c66743c997ee2ab54
+scm.repository.path=heads/develop-0-g6002511e8-dirty
+scm.last.changed.author=Paulo Dias
+scm.last.changed.date=2020-09-30 17:54:19 +0100
+scm.last.changed.date.short=2020-09-30
+scm.wc.dirty.string=dirty
+scm.wc.dirty.status=${git.wc.dirty.status}
+scm.wc.status= M .classpath
+ M missions/APDL/apdl-noptilus.nmisz
+ (ConfigFetch.java:304) {main} {Neptus.Pub}
+[2020-10-14 13:41:40.040+0200] - INFO  - Config. file found in: neptus-config.xml (ConfigFetch.java:216) {main} {Neptus.Pub}
+[2020-10-14 13:41:40.040+0200] - INFO  - I18n (trying): en (I18n.java:87) {main} {Neptus.Pub}
+[2020-10-14 13:41:40.040+0200] - INFO  - I18n (using):  en_US (I18n.java:115) {main} {Neptus.Pub}
+[2020-10-14 13:41:49.049+0200] - INFO  - Reflections took 103 ms to scan 1 urls, producing 94 keys and 553 values  (Reflections.java:224) {main} {org.reflections.Reflections}
+[2020-10-14 13:41:49.049+0200] - INFO  - Reflections took 28 ms to scan 1 urls, producing 66 keys and 315 values  (Reflections.java:224) {main} {org.reflections.Reflections}
+[2020-10-14 13:41:49.049+0200] - INFO  - Reflections took 22 ms to scan 1 urls, producing 12 keys and 13 values  (Reflections.java:224) {main} {org.reflections.Reflections}
+[2020-10-14 13:41:49.049+0200] - INFO  - Reflections took 17 ms to scan 1 urls, producing 4 keys and 4 values  (Reflections.java:224) {main} {org.reflections.Reflections}
+</pre></font><font color='red'><pre>java.lang.ClassNotFoundException: org.acme.myplugin.MyConsoleViz
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:581)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:315)
+	at pt.lsts.neptus.plugins.ExtensionsBag.addPlugin(ExtensionsBag.java:68)
+	at pt.lsts.neptus.plugins.PluginsRepository.addPlugin(PluginsRepository.java:71)
+	at pt.lsts.neptus.plugins.PluginsLoader.loadPluginFromLST(PluginsLoader.java:202)
+	at pt.lsts.neptus.plugins.PluginsLoader.load(PluginsLoader.java:125)
+	at pt.lsts.neptus.loader.NeptusMain.loadPreRequirementsDataExceptConfigFetch(NeptusMain.java:249)
+	at pt.lsts.neptus.loader.NeptusMain.launch(NeptusMain.java:138)
+	at pt.lsts.neptus.loader.NeptusMain.main(NeptusMain.java:356)
+java.lang.ClassNotFoundException: org.acme.myplugin.MyConsoleViz
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:581)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:315)
+	at pt.lsts.neptus.plugins.PluginsRepository.addPlugin(PluginsRepository.java:75)
+	at pt.lsts.neptus.plugins.PluginsLoader.loadPluginFromLST(PluginsLoader.java:202)
+	at pt.lsts.neptus.plugins.PluginsLoader.load(PluginsLoader.java:125)
+	at pt.lsts.neptus.loader.NeptusMain.loadPreRequirementsDataExceptConfigFetch(NeptusMain.java:249)
+	at pt.lsts.neptus.loader.NeptusMain.launch(NeptusMain.java:138)
+	at pt.lsts.neptus.loader.NeptusMain.main(NeptusMain.java:356)
+</pre></font><font color='black'><pre>[2020-10-14 13:41:50.050+0200] - WARN  - Custom editor "Klein3500" not found: java.lang.ClassNotFoundException: pt.lsts.neptus.params.editor.custom.Klein3500CustomEditor (ConfigurationManager.java:237) {System parameters files loader} {Neptus.Pub}
+[2020-10-14 13:41:50.050+0200] - INFO  - workspace load finished in 10.123s  (NeptusMain.java:179) {main} {Neptus.Pub}
+Loading: net.java.games.input.LinuxEnvironmentPlugin
+Failed to open device (/dev/input/event16): Failed to open device /dev/input/event16 (13)
+
+Failed to open device (/dev/input/event15): Failed to open device /dev/input/event15 (13)
+
+Failed to open device (/dev/input/event14): Failed to open device /dev/input/event14 (13)
+
+Failed to open device (/dev/input/event13): Failed to open device /dev/input/event13 (13)
+
+Failed to open device (/dev/input/event12): Failed to open device /dev/input/event12 (13)
+
+Failed to open device (/dev/input/event11): Failed to open device /dev/input/event11 (13)
+
+Failed to open device (/dev/input/event10): Failed to open device /dev/input/event10 (13)
+
+Failed to open device (/dev/input/event9): Failed to open device /dev/input/event9 (13)
+
+Failed to open device (/dev/input/event8): Failed to open device /dev/input/event8 (13)
+
+Failed to open device (/dev/input/event7): Failed to open device /dev/input/event7 (13)
+
+Failed to open device (/dev/input/event6): Failed to open device /dev/input/event6 (13)
+
+Failed to open device (/dev/input/event5): Failed to open device /dev/input/event5 (13)
+
+Failed to open device (/dev/input/event4): Failed to open device /dev/input/event4 (13)
+
+Failed to open device (/dev/input/event3): Failed to open device /dev/input/event3 (13)
+
+Failed to open device (/dev/input/event2): Failed to open device /dev/input/event2 (13)
+
+Failed to open device (/dev/input/event1): Failed to open device /dev/input/event1 (13)
+
+Failed to open device (/dev/input/event0): Failed to open device /dev/input/event0 (13)
+
+Linux plugin claims to have found 0 controllers
+[2020-10-14 13:42:31.031+0200] - INFO  - Starting IMC comms (ImcMsgManager.java:295) {SwingWorker-pool-1-thread-1} {Neptus.Pub}
+[2020-10-14 13:42:31.031+0200] - INFO  - Sender Thread Started (TCPTransport.java:752) {SwingWorker-pool-1-thread-1} {Neptus.Pub}
+[2020-10-14 13:42:31.031+0200] - INFO  - Starting comm. ImcMsgManager (CommonCommBaseImplementation.java:131) {SwingWorker-pool-1-thread-1} {Neptus.Pub}
+[2020-10-14 13:42:31.031+0200] - INFO  - currentProfile: Normal (MigLayoutContainer.java:190) {SwingWorker-pool-1-thread-1} {Neptus.Pub}
+[2020-10-14 13:42:31.031+0200] - WARN  - Value is null!! (MainSystemSelectionCombo.java:214) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 13:42:34.034+0200] - INFO  - Cleaned Console Layout: MigLayout in MainPanel (MainPanel.java:156) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 13:42:35.035+0200] - INFO  - Mission set to null (ConsoleLayout.java:900) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 13:42:35.035+0200] - WARN  - Value is null!! (MainSystemSelectionCombo.java:214) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 13:42:35.035+0200] - INFO  - class pt.lsts.neptus.console.ConsoleLayout :: New main system added to console: 'lauv-xplore-1' (ConsoleLayout.java:1018) {SwingWorker-pool-1-thread-2} {Neptus.Pub}
+[2020-10-14 13:42:35.035+0200] - INFO  - class pt.lsts.neptus.gui.system.selection.MainSystemSelectionCombo :: New system added to console: 'lauv-xplore-1' (MainSystemSelectionCombo.java:122) {Console Event Bus ::3} {Neptus.Pub}
+</pre></font><font color='red'><pre>Native code library failed to load. java.lang.UnsatisfiedLinkError: /home/daniel/workspace/neptus/libJNI/gdal/linux/x64/libgdalconstjni.so: libgdal.so: cannot open shared object file: No such file or directory
+Native code library failed to load. java.lang.UnsatisfiedLinkError: /home/daniel/workspace/neptus/libJNI/gdal/linux/x64/libgdaljni.so: libgdal.so: cannot open shared object file: No such file or directory
+Native code library failed to load. java.lang.UnsatisfiedLinkError: /home/daniel/workspace/neptus/libJNI/gdal/linux/x64/libogrjni.so: libgdal.so: cannot open shared object file: No such file or directory
+Native code library failed to load. java.lang.UnsatisfiedLinkError: /home/daniel/workspace/neptus/libJNI/gdal/linux/x64/libosrjni.so: libgdal.so: cannot open shared object file: No such file or directory
+Native library load failed.
+java.lang.UnsatisfiedLinkError: no gdaljni in java.library.path: [/home/daniel/workspace/neptus/libJNI, /home/daniel/workspace/neptus/libJNI, /usr/lib/jni]
+java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at pt.lsts.neptus.renderer2d.WorldRenderPainter.<clinit>(WorldRenderPainter.java:277)
+	at pt.lsts.neptus.renderer2d.StateRenderer2D.init(StateRenderer2D.java:326)
+	at pt.lsts.neptus.renderer2d.StateRenderer2D.<init>(StateRenderer2D.java:283)
+	at pt.lsts.neptus.console.plugins.planning.MapPanel.<init>(MapPanel.java:151)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at pt.lsts.neptus.console.ContainerSubPanel.readChildFromXml(ContainerSubPanel.java:275)
+	at pt.lsts.neptus.console.ConsolePanel.inElement(ConsolePanel.java:602)
+	at pt.lsts.neptus.util.ConsoleParse.parseConsoleMainPanel(ConsoleParse.java:312)
+	at pt.lsts.neptus.util.ConsoleParse.parseElement(ConsoleParse.java:171)
+	at pt.lsts.neptus.util.ConsoleParse.parseFile(ConsoleParse.java:225)
+	at pt.lsts.neptus.console.actions.OpenConsoleAction$1.doInBackground(OpenConsoleAction.java:77)
+	at pt.lsts.neptus.console.actions.OpenConsoleAction$1.doInBackground(OpenConsoleAction.java:74)
+	at java.desktop/javax.swing.SwingWorker$1.call(SwingWorker.java:304)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.desktop/javax.swing.SwingWorker.run(SwingWorker.java:343)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.UnsatisfiedLinkError: 'void org.gdal.gdal.gdalJNI.SetConfigOption(java.lang.String, java.lang.String)'
+	at org.gdal.gdal.gdalJNI.SetConfigOption(Native Method)
+	at org.gdal.gdal.gdal.SetConfigOption(gdal.java:118)
+	at pt.lsts.s57.S57Factory.a(Unknown Source)
+	at pt.lsts.s57.S57Factory.build(Unknown Source)
+	at pt.lsts.neptus.plugins.s57.S57Chart.<init>(S57Chart.java:79)
+	... 25 more
+</pre></font><font color='black'><pre>[2020-10-14 13:42:35.035+0200] - INFO  - Initialized Map Providers in 0.108s (WorldRenderPainter.java:330) {SwingWorker-pool-1-thread-2} {Neptus.Pub}
+[2020-10-14 13:42:35.035+0200] - INFO  - Reflections took 25 ms to scan 1 urls, producing 8 keys and 15 values  (Reflections.java:224) {SwingWorker-pool-1-thread-2} {org.reflections.Reflections}
+file:/home/daniel/workspace/neptus/build/classes/
+[2020-10-14 13:42:35.035+0200] - INFO  - Loaded 57 colormaps from file:/home/daniel/workspace/neptus/build/classes/ (ColorMapFactory.java:497) {SwingWorker-pool-1-thread-2} {Neptus.Pub}
+[2020-10-14 13:42:36.036+0200] - INFO  - Read 0 vessel names from /home/daniel/workspace/neptus/conf/ais.cache (AisContactDb.java:127) {SwingWorker-pool-1-thread-2} {Neptus.Pub}
+[2020-10-14 13:42:36.036+0200] - INFO  - currentProfile: Normal (MigLayoutContainer.java:190) {SwingWorker-pool-1-thread-2} {Neptus.Pub}
+[2020-10-14 13:42:36.036+0200] - INFO  - Code in (ConsolePanel.java:645) tried to add an already registered updates client (PeriodicUpdatesService.java:113) {SwingWorker-pool-1-thread-2} {Neptus.Pub}
+Set Timezone to: UTC
+[2020-10-14 13:42:36.036+0200] - INFO  - Wrote 0 vessel names to /home/daniel/workspace/neptus/conf/ais.cache (AisContactDb.java:156) {Periodic Updates - 1} {Neptus.Pub}
+[2020-10-14 13:42:37.037+0200] - WARN  - java.util.concurrent.ExecutionException: java.lang.ExceptionInInitializerError (AssetsManager.java:344) {Periodic Updates - 1} {Neptus.Pub}
+[2020-10-14 13:42:58.058+0200] - INFO  - ConsoleLayout cleanup start (ConsoleLayout.java:1697) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 13:42:58.058+0200] - INFO  - Cleaning DesiredPath Layer (ConsoleLayout.java:1651) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 13:42:58.058+0200] - INFO  - Cleaned DesiredPath Layer (ConsoleLayout.java:1653) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 13:42:58.058+0200] - INFO  - Cleaning Find Main System (ConsoleLayout.java:1651) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 13:42:58.058+0200] - INFO  - Cleaned Find Main System (ConsoleLayout.java:1653) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 13:42:58.058+0200] - INFO  - Cleaning Keyboard Shortcuts (ConsoleLayout.java:1651) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 13:42:58.058+0200] - INFO  - Cleaned Keyboard Shortcuts (ConsoleLayout.java:1653) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 13:42:58.058+0200] - INFO  - Cleaning NMEA Plotter (ConsoleLayout.java:1651) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 13:42:58.058+0200] - INFO  - Cleaned NMEA Plotter (ConsoleLayout.java:1653) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 13:42:58.058+0200] - INFO  - Cleaning Plan Simulation (ConsoleLayout.java:1651) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 13:42:58.058+0200] - INFO  - Cleaned Plan Simulation (ConsoleLayout.java:1653) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 13:42:58.058+0200] - INFO  - Cleaning System Information On Map (ConsoleLayout.java:1651) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 13:42:58.058+0200] - INFO  - Cleaned System Information On Map (ConsoleLayout.java:1653) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 13:42:58.058+0200] - INFO  - Cleaning netCDF Data Visualization (ConsoleLayout.java:1651) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 13:42:58.058+0200] - INFO  - Cleaned netCDF Data Visualization (ConsoleLayout.java:1653) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 13:42:58.058+0200] - INFO  - Cleaned Depth Soundings Interaction (ConsoleLayout.java:1665) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 13:42:58.058+0200] - INFO  - Cleaned Systems Interaction (ConsoleLayout.java:1665) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 13:42:58.058+0200] - INFO  - Cleaned Abort Button in Console Layout: MigLayout (ContainerSubPanel.java:318) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 13:42:58.058+0200] - INFO  - Cleaned Abort Request in Console Layout: MigLayout (ContainerSubPanel.java:318) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 13:42:58.058+0200] - INFO  - Closing popup dialog for: Acoustic Operations (ConsolePanel.java:355) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 13:42:58.058+0200] - WARN  - Unregistering Key Accelerator (ConsoleLayout.java:493) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 13:42:58.058+0200] - INFO  - Cleaned Acoustic Operations in Console Layout: MigLayout (ContainerSubPanel.java:318) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 13:42:58.058+0200] - INFO  - Cleaned Audio Vehicle State Alerts in Console Layout: MigLayout (ContainerSubPanel.java:318) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 13:42:58.058+0200] - INFO  - Closing popup dialog for: Chronometer (ConsolePanel.java:355) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 13:42:58.058+0200] - WARN  - Unregistering Key Accelerator (ConsoleLayout.java:493) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 13:42:58.058+0200] - INFO  - Cleaned Chronometer in Console Layout: MigLayout (ContainerSubPanel.java:318) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 13:42:58.058+0200] - INFO  - Cleaned Command Planner in Console Layout: MigLayout (ContainerSubPanel.java:318) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 13:42:58.058+0200] - INFO  - Cleaned Contact Marker in Console Layout: MigLayout (ContainerSubPanel.java:318) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 13:42:58.058+0200] - INFO  - Closing popup dialog for: Controllers Panel (ConsolePanel.java:355) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 13:42:58.058+0200] - WARN  - Unregistering Key Accelerator (ConsoleLayout.java:493) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 13:42:58.058+0200] - INFO  - Cleaned Controllers Panel in Console Layout: MigLayout (ContainerSubPanel.java:318) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 13:42:58.058+0200] - INFO  - Closing popup dialog for: Entities (ConsolePanel.java:355) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 13:42:58.058+0200] - WARN  - Unregistering Key Accelerator (ConsoleLayout.java:493) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 13:42:58.058+0200] - INFO  - Cleaned Entities in Console Layout: MigLayout (ContainerSubPanel.java:318) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 13:42:58.058+0200] - INFO  - Cleaned FollowReference Interaction in Console Layout: MigLayout (ContainerSubPanel.java:318) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 13:42:58.058+0200] - INFO  - Closing popup dialog for: Navigation Alignment (ConsolePanel.java:355) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 13:42:58.058+0200] - WARN  - Unregistering Key Accelerator (ConsoleLayout.java:493) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 13:42:58.058+0200] - INFO  - Cleaned Navigation Alignment in Console Layout: MigLayout (ContainerSubPanel.java:318) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 13:42:58.058+0200] - INFO  - Closing popup dialog for: Incoming Data (ConsolePanel.java:355) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 13:42:58.058+0200] - WARN  - Unregistering Key Accelerator (ConsoleLayout.java:493) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 13:42:58.058+0200] - INFO  - Cleaned Incoming Data in Console Layout: MigLayout (ContainerSubPanel.java:318) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 13:42:58.058+0200] - INFO  - Closing popup dialog for: Kml Import (ConsolePanel.java:355) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 13:42:58.058+0200] - INFO  - Cleaned Kml Import in Console Layout: MigLayout (ContainerSubPanel.java:318) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 13:42:58.058+0200] - INFO  - Closing popup dialog for: LBL Ranges (ConsolePanel.java:355) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 13:42:58.058+0200] - WARN  - Unregistering Key Accelerator (ConsoleLayout.java:493) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 13:42:58.058+0200] - INFO  - Cleaned LBL Ranges in Console Layout: MigLayout (ContainerSubPanel.java:318) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 13:42:58.058+0200] - INFO  - Closing popup dialog for: Logbook History (ConsolePanel.java:355) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 13:42:58.058+0200] - WARN  - Unregistering Key Accelerator (ConsoleLayout.java:493) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 13:42:58.058+0200] - INFO  - Cleaned Logbook History in Console Layout: MigLayout (ContainerSubPanel.java:318) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 13:42:58.058+0200] - INFO  - Closing popup dialog for: Log Download (ConsolePanel.java:355) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 13:42:58.058+0200] - WARN  - Unregistering Key Accelerator (ConsoleLayout.java:493) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 13:42:58.058+0200] - INFO  - Cleaned Log Download in Console Layout: MigLayout (ContainerSubPanel.java:318) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 13:42:58.058+0200] - INFO  - Cleaned Log Preview in Console Layout: MigLayout (ContainerSubPanel.java:318) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 13:42:58.058+0200] - INFO  - Cleaned Map Editor in Console Layout: MigLayout (ContainerSubPanel.java:318) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 13:42:58.058+0200] - ERROR - SystemImcMsgCommInfo: Not possible to remove listener from pt.lsts.neptus.console.plugins.planning.MapPanel[Map Panel,0,0,1060x636,invalid,layout=java.awt.BorderLayout,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.EmptyBorder@5fd8992e,flags=9,maximumSize=,minimumSize=,preferredSize=] (CommonCommBaseImplementation.java:601) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 13:42:58.058+0200] - INFO  - Cleaned Map Panel in Console Layout: MigLayout (ContainerSubPanel.java:318) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 13:42:58.058+0200] - INFO  - Cleaned Mission Tree in Console Layout: MigLayout (ContainerSubPanel.java:318) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 13:42:58.058+0200] - INFO  - Cleaned Multi-Vehicle plan overlay in Console Layout: MigLayout (ContainerSubPanel.java:318) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 13:42:58.058+0200] - INFO  - Cleaned MyLocationDisplay in Console Layout: MigLayout (ContainerSubPanel.java:318) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 13:42:58.058+0200] - INFO  - Cleaned Operation Limits in Console Layout: MigLayout (ContainerSubPanel.java:318) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 13:42:58.058+0200] - INFO  - Cleaned Plan Control in Console Layout: MigLayout (ContainerSubPanel.java:318) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 13:42:58.058+0200] - INFO  - Cleaned Plan Control State in Console Layout: MigLayout (ContainerSubPanel.java:318) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 13:42:58.058+0200] - INFO  - Cleaned Plan Edition in Console Layout: MigLayout (ContainerSubPanel.java:318) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 13:42:58.058+0200] - INFO  - Cleaned PlanExporter in Console Layout: MigLayout (ContainerSubPanel.java:318) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 13:42:58.058+0200] - INFO  - Cleaned Plan Simulation Preview in Console Layout: MigLayout (ContainerSubPanel.java:318) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 13:42:58.058+0200] - INFO  - Cleaned Plan Statistics in Console Layout: MigLayout (ContainerSubPanel.java:318) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 13:42:58.058+0200] - INFO  - Cleaned S57 Tools in Console Layout: MigLayout (ContainerSubPanel.java:318) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 13:42:58.058+0200] - INFO  - Cleaned SimulationActionsPlugin in Console Layout: MigLayout (ContainerSubPanel.java:318) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 13:42:58.058+0200] - INFO  - Closing popup dialog for: System Configuration (ConsolePanel.java:355) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 13:42:58.058+0200] - WARN  - Unregistering Key Accelerator (ConsoleLayout.java:493) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 13:42:58.058+0200] - INFO  - Cleaned System Configuration in Console Layout: MigLayout (ContainerSubPanel.java:318) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 13:42:58.058+0200] - INFO  - Closing popup dialog for: Systems List (ConsolePanel.java:355) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 13:42:58.058+0200] - WARN  - Unregistering Key Accelerator (ConsoleLayout.java:493) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 13:42:58.058+0200] - INFO  - Cleaned Systems List in Console Layout: MigLayout (ContainerSubPanel.java:318) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 13:42:58.058+0200] - INFO  - Closing popup dialog for: Text Commands (ConsolePanel.java:355) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 13:42:58.058+0200] - WARN  - Unregistering Key Accelerator (ConsoleLayout.java:493) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 13:42:58.058+0200] - INFO  - Cleaned Text Commands in Console Layout: MigLayout (ContainerSubPanel.java:318) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 13:42:58.058+0200] - INFO  - Closing popup dialog for: Tide panel (ConsolePanel.java:355) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 13:42:58.058+0200] - WARN  - Unregistering Key Accelerator (ConsoleLayout.java:493) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 13:42:58.058+0200] - INFO  - Cleaned Tide panel in Console Layout: MigLayout (ContainerSubPanel.java:318) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 13:42:58.058+0200] - INFO  - Cleaned Vehicle State Monitor in Console Layout: MigLayout (ContainerSubPanel.java:318) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 13:42:58.058+0200] - INFO  - Cleaned Stream Speed Overlay in Console Layout: MigLayout (ContainerSubPanel.java:318) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 13:42:58.058+0200] - INFO  - Cleaned NMEAPositionSender in Console Layout: MigLayout (ContainerSubPanel.java:318) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 13:42:58.058+0200] - INFO  - Cleaned Iridium Communications Plug-in in Console Layout: MigLayout (ContainerSubPanel.java:318) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 13:42:58.058+0200] - INFO  - Cleaned SOI Interaction in Console Layout: MigLayout (ContainerSubPanel.java:318) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 13:42:58.058+0200] - INFO  - Closing popup dialog for: Iridium Communications Status (ConsolePanel.java:355) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 13:42:58.058+0200] - INFO  - Cleaned Iridium Communications Status in Console Layout: MigLayout (ContainerSubPanel.java:318) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 13:42:58.058+0200] - INFO  - Closing popup dialog for: Sidescan Real-Time Waterfall (ConsolePanel.java:355) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 13:42:58.058+0200] - INFO  - Cleaned Sidescan Real-Time Waterfall in Console Layout: MigLayout (ContainerSubPanel.java:318) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 13:42:58.058+0200] - INFO  - Cleaned Sweep Plan Generator in Console Layout: MigLayout (ContainerSubPanel.java:318) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 13:42:58.058+0200] - INFO  - Closing popup dialog for: Real-Time Plot (ConsolePanel.java:355) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 13:42:58.058+0200] - WARN  - Unregistering Key Accelerator (ConsoleLayout.java:493) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 13:42:58.058+0200] - INFO  - Cleaned Real-Time Plot in Console Layout: MigLayout (ContainerSubPanel.java:318) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 13:42:58.058+0200] - INFO  - Cleaned Ripples Updater in Console Layout: MigLayout (ContainerSubPanel.java:318) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 13:42:58.058+0200] - INFO  - Cleaned Console Layout: MigLayout in MainPanel (MainPanel.java:156) {AWT-EventQueue-0} {Neptus.Pub}
+[2020-10-14 13:42:58.058+0200] - INFO  - ConsoleLayout cleanup end in 0.085s (ConsoleLayout.java:1719) {AWT-EventQueue-0} {Neptus.Pub}
+</pre></font>
+<hr>
+<font color='green'><i>Neptus closed at 2020-10-14 13:43:00</i></font>
+</body></html>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<myState>
+    <location>
+        <azimuth>0.0</azimuth>
+        <depth>0.0</depth>
+        <height>-0.0</height>
+        <id>id_l50h2o</id>
+        <latitudeDegs>0.0</latitudeDegs>
+        <latitudeRads>0.0</latitudeRads>
+        <latitudeStr>0N0.000</latitudeStr>
+        <longitudeDegs>0.0</longitudeDegs>
+        <longitudeRads>0.0</longitudeRads>
+        <longitudeStr>0E0.000</longitudeStr>
+        <name>id_l50h2o</name>
+        <offsetDistance>0.0</offsetDistance>
+        <offsetDown>0.0</offsetDown>
+        <offsetEast>0.0</offsetEast>
+        <offsetEastUsed>true</offsetEastUsed>
+        <offsetNorth>0.0</offsetNorth>
+        <offsetNorthUsed>true</offsetNorthUsed>
+        <offsetSouth>0.0</offsetSouth>
+        <offsetUp>0.0</offsetUp>
+        <offsetUpUsed>true</offsetUpUsed>
+        <offsetWest>0.0</offsetWest>
+        <zenith>90.0</zenith>
+        <anglesUsed>true</anglesUsed>
+        <pitch>0.0</pitch>
+        <roll>0.0</roll>
+        <yaw>0.0</yaw>
+    </location>
+    <length>0.0</length>
+    <width>0.0</width>
+    <widthOffsetFromCenter>0.0</widthOffsetFromCenter>
+    <lengthOffsetFromCenter>0.0</lengthOffsetFromCenter>
+    <draught>0.0</draught>
+</myState>

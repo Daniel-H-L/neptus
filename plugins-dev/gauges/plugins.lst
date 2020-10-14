@@ -1,0 +1,8 @@
+# DATE=@DATE@
+# TIME=@TIME@
+# COMPILED BY=@COMPILED BY@
+# LEGAL_COPY=@LEGAL_COPY@
+
+#http://whale.fe.up.pt/~lsts/wiki/index.php/User:AndrePinto#Data_Interpolator_Project
+pt.lsts.neptus.plugins.gauges.CpuBattDiskNetGauge
+pt.lsts.neptus.plugins.gauges.GaugeSubPanel

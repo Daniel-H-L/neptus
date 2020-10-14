@@ -1,0 +1,9 @@
+# DATE=@DATE@
+# TIME=@TIME@
+# COMPILED BY=@COMPILED BY@
+# LEGAL_COPY=@LEGAL_COPY@
+
+pt.lsts.neptus.plugins.odss.OdssStatePublisher
+pt.lsts.neptus.plugins.odss.MraCsvExporter
+pt.lsts.neptus.plugins.odss.OdssStoqsTrackFetcher
+pt.lsts.neptus.plugins.odss.OdssRabbitMQTrackFetcher

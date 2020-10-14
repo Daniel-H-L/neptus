@@ -1,0 +1,8 @@
+# DATE=@DATE@
+# TIME=@TIME@
+# COMPILED BY=@COMPILED BY@
+# LEGAL_COPY=@LEGAL_COPY@
+
+#Simple Plugin:
+pt.lsts.neptus.plugins.alarms.ExceptionAlarm
+pt.lsts.neptus.plugins.alarms.LastErrorPanel
